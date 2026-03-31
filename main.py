@@ -58,7 +58,7 @@ async def get_recipes(data: RecipeSchema, session: SessionDep):
     )
     session.add(new_recipe)
     await session.commit()
-    return {"message": "Рецепт добавлен"}
+    return {"message": "Рецепт добавлен!"}
 
 
 if __name__ == "__main__":
